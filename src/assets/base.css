@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+:root {
+  --color-background: #f8f9fb;
+  --color-surface: #ffffff;
+  --color-surface-low: #f3f4f6;
+  --color-surface-mid: #edeef0;
+  --color-surface-high: #e7e8ea;
+  --color-text: #191c1e;
+  --color-muted: #434654;
+  --color-outline: #737685;
+  --color-outline-soft: #c3c6d6;
+  --color-primary: #003d9b;
+  --color-primary-bright: #0052cc;
+  --color-primary-soft: #dae2ff;
+  --color-secondary: #006a6a;
+  --color-secondary-soft: #90efef;
+  --color-tertiary: #7b2600;
+  --color-error: #ba1a1a;
+  --color-error-soft: #ffdad6;
+  --shadow-soft: 0 18px 36px -22px rgba(25, 28, 30, 0.35);
+  --shadow-card: 0 16px 32px -24px rgba(25, 28, 30, 0.24);
+  --page-max: 1180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+  background: var(--color-background);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-family: Manrope, Inter, sans-serif;
+}
+
+.material-symbols,
+.search-icon,
+.trend-icon,
+.link-button span,
+.footer-icons button {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  line-height: 1;
+}
