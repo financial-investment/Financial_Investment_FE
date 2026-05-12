@@ -1,7 +1,7 @@
 <script setup>
-import MarketIndexCard from '../components/MarketIndexCard.vue'
+import MarketIndexSummarySection from '../components/MarketIndexSummarySection.vue'
 import StockListItem from '../components/StockListItem.vue'
-import { marketIndices, newsItems, stocks } from '../data/mockData'
+import { newsItems, stocks } from '../data/mockData'
 
 const emit = defineEmits(['navigate', 'select-stock'])
 
@@ -44,9 +44,7 @@ const popularStocks = stocks.slice(0, 4).map((stock) => ({
       </div>
     </section>
 
-    <section class="market-section" aria-label="시장 지수">
-      <MarketIndexCard v-for="index in marketIndices" :key="index.title" v-bind="index" />
-    </section>
+    <MarketIndexSummarySection />
 
     <section class="content-band">
       <div class="content-grid">

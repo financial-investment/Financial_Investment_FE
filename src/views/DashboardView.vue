@@ -1,18 +1,16 @@
 <script setup>
 import HoldingTable from '../components/HoldingTable.vue'
-import MarketIndexCard from '../components/MarketIndexCard.vue'
+import MarketIndexSummarySection from '../components/MarketIndexSummarySection.vue'
 import MetricCard from '../components/MetricCard.vue'
 import PageShell from '../components/PageShell.vue'
-import { accountSummary, marketIndices, stocks, transactions } from '../data/mockData'
+import { accountSummary, stocks, transactions } from '../data/mockData'
 
 defineEmits(['navigate', 'select-stock'])
 </script>
 
 <template>
   <PageShell title="메인페이지 조회" description="시장 현황과 나의 모의투자 현황을 한눈에 확인하세요." wide>
-    <section class="market-section compact">
-      <MarketIndexCard v-for="index in marketIndices" :key="index.title" v-bind="index" />
-    </section>
+    <MarketIndexSummarySection compact />
 
     <section class="metric-grid">
       <MetricCard v-for="metric in accountSummary" :key="metric.label" v-bind="metric" />
