@@ -4,6 +4,27 @@ export const marketIndices = [
   { title: '원/달러 환율', value: '1,335.50', status: '+0.23%', trend: 'up' },
 ]
 
+export const marketCharts = [
+  {
+    title: '코스피',
+    symbol: 'TVC:KOSPI',
+    description: '국내 유가증권시장 대표 지수',
+    dateRange: '12M',
+  },
+  {
+    title: '코스닥',
+    symbol: 'KRX:229200',
+    description: '코스닥150 추종 ETF 기준 대체 차트',
+    dateRange: '12M',
+  },
+  {
+    title: '원/달러 환율',
+    symbol: 'FX_IDC:USDKRW',
+    description: '미국 달러 대비 원화 환율',
+    dateRange: '12M',
+  },
+]
+
 export const stocks = [
   {
     id: 'samsung',
